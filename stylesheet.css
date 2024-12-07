@@ -1,0 +1,201 @@
+/*https://www.youtube.com/watch?v=oYRda7UtuhA&list=PLjwm_8O3suyP5kGKmwS_DM0Hs1j7fshi5&index=2*/
+/*Palette
+Light Shy Blue:#87CEFA
+Light STeel Blue: #B0C4DE
+Lowes Blue: #004792
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url('Images/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo a{
+display: flex;
+align-items: center;
+font-size: 20px;
+}
+
+.logo a:hover{
+    color: #B9D9EB;
+}
+
+.logo img{
+    width: 200px;
+    margin-right: 10px;
+
+}
+
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   background:transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #B9D9EB;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.StudentsP{
+   text-align: left;
+   padding: 80px;
+   padding-bottom: 1%;
+   top: 20vh;
+   font-family: Futura;
+   font-size: 60px;
+}
+
+.footer{
+  position: fixed;
+  top: 96;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #004792;
+  color: black;
+  text-align: center;
+}
+
+.PoweredBy{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: white;
+    margin: 5px;
+
+}
+
+.summary{
+    text-align: left;
+    font-family: AllRounder;
+    font-size: 15px;
+    color: black;
+    width: 50%;
+    padding-left: 5.10%;
+     
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    z-index: 1;
+}
+
+input[type=text] {
+    width: 25%;
+    height: 15%;
+    padding: 12px 15px;
+    margin: 8px;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+input[type=number]{
+    width: 25%;
+    height: 15%;
+    padding: 12px 15px;
+    margin: 8px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(Futura\ Extra\ Bold.otf);
+}
+
+@font-face {
+    font-family: AllRounder;
+    src: url(AllrounderMonumentTest-Medium.otf);
+}
+
+.Information, .Read{
+font-family: Futura;
+font-size: 20px;
+}
+
+.Read{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 2% 6% 6% 5%;
+    page-break-after: always;
+}
+
+.Information{
+    page-break-before: always;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1% 5px 5px 5%;
+    width: 50%;
+}
+
+.Form{
+    font-family: Futura;
+    font-size: 15px;
+    margin-left: 5.05%;
+}
+
+.Done{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 2% 2% 2% 2%;
+    margin: 2% 1% 2% 1%;
+}
+
+.Cancel{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 2% 2% 2% 2%;
+    margin: 2% 1% 2% 1%;
+    text-decoration:none;
+}
