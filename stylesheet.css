@@ -179,7 +179,7 @@ input[type=text], input[type=number] {
 
 .Information{
     page-break-before: always;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Futura;
     padding: 1% 5px 5px 5%;
     width: 50%;
 }
@@ -207,4 +207,8 @@ button.Done, button.Cancel {
 
 button.Done:hover, button.Cancel:hover {
     background-color: #005bb5;
+}
+
+button.Done{
+    margin-left: 5%;
 }
