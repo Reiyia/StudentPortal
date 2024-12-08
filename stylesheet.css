@@ -109,15 +109,17 @@ body{
     display: block;
 }
 
+/*Student Portal Section*/
 .StudentsP{
-   text-align: left;
-   padding: 10% 10% 1% 10%;
-   padding-top: 10%;
-   padding-bottom: 1%;
-   top: 20vh;
-   font-family: Futura;
-   font-size: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 2% 0;
+    margin-left: 10%;
+    display: block;
 }
+
 
 .footer{
   position: fixed;
@@ -139,12 +141,13 @@ body{
 }
 
 .summary{
-    text-align: left;
+    text-align: center;
     font-family: AllRounder;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
-    width: 50%;
-    padding-left: 5.10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0;
 }
 
 /* Read More Button Style */
@@ -154,9 +157,7 @@ body{
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
-    margin: 2% 0;
-    margin-left: 10%;
+    margin-left: 45%;
     display: block;
 }
 
