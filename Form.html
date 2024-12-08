@@ -3,8 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Student Portal</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        $(document).ready(function() {
+            $("a.scroll-link").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -12,9 +35,9 @@
         <nav class="navbar">
             <a href="Front Page.html">Home</a>
             <a href="#">Mentors</a>
-            <a href="#">Application</a>
+            <a href="#information" class="scroll-link">Application</a>
             <div class="dropdown">
-                <button class="dropbtn"> ⋮
+                <button class="dropbtn">&nbsp&nbsp&nbsp ⋮
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -30,8 +53,8 @@
     <p class="summary">
         In compliance with the requirements of the Data Privacy Act, we would like to secure your consent on the general use and sharing of information to process your personal data for the purpose of documentation and accreditation evidence.
     </p>
-    <button class="Read"><img src="https://img.icons8.com/ios-filled/50/004792/read-more.png" alt="Read More"></button>
-    <div class="Information">
+    <a href="#information" class="scroll-link Read"><img src="IMAGES/see.png" alt="Read More"></a>
+    <div id="information" class="Information">
         <p>
             In compliance with the requirements of the Data Privacy Act, we would like to secure your consent on the general use and sharing of information to process your personal data for the purpose of documentation and accreditation evidence.<br>
             <br>The personal data collected herein will only be used for the purpose stated above and will be stored digitally and eventually disposed of securely after 5 years in accordance with AdU's retention and disposal Policies.

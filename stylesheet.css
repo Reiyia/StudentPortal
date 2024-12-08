@@ -1,4 +1,4 @@
-/*Palette
+/* Palette
 Light Shy Blue:#87CEFA
 Light Steel Blue: #B0C4DE
 Lowes Blue: #004792
@@ -53,7 +53,7 @@ body{
     color: white;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 20px; /* Adjusted margin */
 }
 
 .navbar a::before{
@@ -111,7 +111,7 @@ body{
 
 .StudentsP{
    text-align: left;
-   padding: 80px;
+   padding: 10% 10% 1% 10%;
    padding-top: 10%;
    padding-bottom: 1%;
    top: 20vh;
@@ -141,53 +141,66 @@ body{
 .summary{
     text-align: left;
     font-family: AllRounder;
-    font-size: 15px;
+    font-size: 30px;
     color: black;
     width: 50%;
     padding-left: 5.10%;
 }
 
+/* Read More Button Style */
+/*<a href="https://www.flaticon.com/free-icons/read-more" title="read more icons">Read more icons created by bearicons - Flaticon</a>*/
+
+.Read {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 2% 0;
+    margin-left: 10%;
+    display: block;
+}
+
+.Read img {
+    width: 150px;
+    height: 150px;
+}
+
+.Read:hover img {
+    filter: brightness(1.2);
+}
+
+/* Information Section Style */
+.Information {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 1% 5px 5px 3%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
 input[type=text], input[type=number] {
-    width: 25%;
+    width: 50%;
     padding: 12px 15px;
     margin: 8px;
     box-sizing: border-box;
     align-content: center;
-}
-
-@font-face {
-    font-family: Futura;
-    src: url(Futura\ Extra\ Bold.otf);
-}
-
-@font-face {
-    font-family: AllRounder;
-    src: url(AllrounderMonumentTest-Medium.otf);
-}
-
-.Information, .Read{
-    font-family: Futura;
-    font-size: 20px;
-}
-
-.Read{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    margin: 2% 6% 6% 5%;
-    page-break-after: always;
-}
-
-.Information{
-    page-break-before: always;
-    font-family: Futura;
-    padding: 1% 5px 5px 5%;
-    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .Form{
     font-family: Futura;
     font-size: 15px;
     margin-left: 5.05%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
 button.Done, button.Cancel {
@@ -197,12 +210,16 @@ button.Done, button.Cancel {
     margin: 2% 1%;
     text-decoration: none;
     color: #fff;
-    background-color: #B0C4DE;
+    background-color: #B0C4DE; /* Light Steel Blue */
     border: none;
     border-radius: 25px;
     cursor: pointer;
     border-color: white;
     margin-bottom: 5%;
+    width: 20%;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1.5%;
 }
 
 button.Done:hover, button.Cancel:hover {
@@ -210,5 +227,5 @@ button.Done:hover, button.Cancel:hover {
 }
 
 button.Done{
-    margin-left: 5%;
+    margin-left: 28.5%;
 }
